@@ -1,0 +1,14 @@
+@mixin fontSizelineHeight($fontSize, $lineHeight) {
+	font-size: $fontSize;
+	line-height: $lineHeight;
+}
+
+@mixin inlineBlockPadding($padding) {
+	display: inline-block;
+	padding: $padding;
+}
+
+@mixin colorBkgColor($color, $bkgcolor) {
+	color: $color;
+	background-color: $bkgcolor;
+}

@@ -1,0 +1,53 @@
+@import "../utils/mixins.scss";
+@import "../utils/variables.scss";
+
+body {
+	margin: 0 auto;
+	@include colorBkgColor(white, $lightBlue);
+}
+
+.landing-copy {
+	margin-left: 70px;
+}
+
+.half-column {
+	@include inlineBlockPadding(50px 0px 10px 20px);
+	width: 40%;
+}
+
+.main-nav li {
+	@include inlineBlockPadding(5px 30px);
+	margin: 10px;
+}
+
+nav {
+	margin-top: 6em;
+	background-color: $veryLightBlue;
+	height: 3.75em;
+	padding: 0px 40px;
+	text-align: center;
+}
+
+a {
+	color: $deepPurple;
+	text-decoration: none;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+a.cta-button {
+	border: 2px solid white;
+	border-radius: 50px;
+	@include colorBkgColor(white, $lightPink);
+	font-weight: 700;
+	padding: 5px 20px;
+	&:hover {
+		background-color: $superLightPink;
+		text-decoration: none;
+	}
+}
+
+.right {
+	float: right;
+}
